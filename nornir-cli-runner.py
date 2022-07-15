@@ -87,8 +87,6 @@ if mode == "c":
 
 
 if mode == "v":
-    print("Work in progress, please try later.")
-    
     print("Enter configuration to verify existence on all devices:")
     command = input()
     
