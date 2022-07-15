@@ -1,0 +1,41 @@
+---
+eos_1:
+   hostname: 10.122.216.211
+   groups:
+        - eos
+   connection_options:
+      netmiko:
+         extras:
+            secret: arista
+eos_2:
+   hostname: 10.122.216.212
+   groups:
+        - eos
+   connection_options:
+      netmiko:
+         extras:
+            secret: arista
+eos_3:
+   hostname: 10.122.216.213
+   groups:
+        - eos
+   connection_options:
+      netmiko:
+         extras:
+            secret: arista
+eos_4:
+   hostname: 10.122.216.214
+   groups:
+        - eos
+   connection_options:
+      netmiko:
+         extras:
+            secret: arista
+#eos_5:
+#   hostname: 10.122.216.215
+#   groups:
+#        - eos
+#   connection_options:
+#      netmiko:
+#         extras:
+#            secret: arista
