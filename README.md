@@ -14,8 +14,8 @@ python3-nornir (3.3.0)
 Add details to files in inventory folder.  
 
 ## nornir-cli-runner
-nornir-cli-runner will connect to devices listed within ./inventory/hosts.yaml and perform cli commands requested when running the program. Output will be printed to the screen and also to a file in folder called "output".
+nornir-cli-runner will connect to devices listed within ./inventory/hosts.yaml and perform cli commands requested when running the program. Output will be printed to the screen and also to a file in folder called "output". The tool is currently configured for 10 workers which vastly increases the speed of any tasks sent to multiple devices.  
 ### How to use:
-Edit the ./inventory/hosts.yaml file with the list of devices and save in the format required by the application. 
+Edit the ./inventory/hosts.yaml file with the list of devices and save in the format required by the application.  
 Edit the ./inventory/creds.yaml file with any updates.  
 Once the hosts and creds files are complete, simply run the application and pick from show, configuration or verification mode and you will be asked for the command(s) to be entered and then attempt to perform the tasks on each line in the hosts file.  
