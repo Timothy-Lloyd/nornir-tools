@@ -4,6 +4,9 @@ nornir-tools is a collection of simple CLI tools designed to be used on network 
 **To do list:**  
 1. Add more features
 2. Add napalm functions
+3. Add password prompting
+4. Integrate csv2nornir for host file
+
 
 ## Requirements (tested versions):
 python3 (3.8.10)  
