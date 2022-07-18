@@ -5,7 +5,6 @@ nornir-tools is a collection of simple CLI tools designed to be used on network 
 1. Add more features
 2. Add napalm functions
 3. Add password prompting
-4. Integrate csv2nornir for host file
 
 
 ## Requirements (tested versions):
@@ -19,6 +18,6 @@ Add details to files in inventory folder.
 ## nornir-cli-runner
 nornir-cli-runner will connect to devices listed within ./inventory/hosts.yaml and perform cli commands requested when running the program. Output will be printed to the screen and also to a file in folder called "output". The tool is currently configured for 10 workers which vastly increases the speed of any tasks sent to multiple devices.  
 ### How to use:
-Edit the ./inventory/hosts.yaml file with the list of devices and save in the format required by the application.  
+Edit the master-host-inventory.csv file with the list of devices and then run the csv-to-yaml.py tool which will convert the csv file into the correct format and overwrite the ./inventory/hosts.yaml file. Alternatively edit the ./inventory/hosts.yaml file with the list of devices and save in the format required by the application.  
 Edit the ./inventory/creds.yaml file with any updates.  
 Once the hosts and creds files are complete, simply run the application and pick from show, configuration or verification mode and you will be asked for the command(s) to be entered and then attempt to perform the tasks on each line in the hosts file.  

@@ -1,0 +1,5 @@
+Display-Name,IP-Address,Group,Secret
+eos_1,10.122.216.211,eos,arista
+eos_2,10.122.216.212,eos,arista
+eos_3,10.122.216.213,eos,arista
+eos_4,10.122.216.214,eos,arista

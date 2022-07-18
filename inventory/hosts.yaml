@@ -31,11 +31,3 @@ eos_4:
       netmiko:
          extras:
             secret: arista
-#eos_5:
-#   hostname: 10.122.216.215
-#   groups:
-#        - eos
-#   connection_options:
-#      netmiko:
-#         extras:
-#            secret: arista
