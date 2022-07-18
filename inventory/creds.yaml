@@ -1,3 +1,2 @@
-username: arista
-password: arista
-secret: arista
+username: from-user-input
+password: from-user-input

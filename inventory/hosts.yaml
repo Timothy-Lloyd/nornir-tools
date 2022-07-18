@@ -6,7 +6,7 @@ eos_1:
    connection_options:
       netmiko:
          extras:
-            secret: arista
+            secret: from-user-input
 eos_2:
    hostname: 10.122.216.212
    groups:
@@ -14,7 +14,7 @@ eos_2:
    connection_options:
       netmiko:
          extras:
-            secret: arista
+            secret: from-user-input
 eos_3:
    hostname: 10.122.216.213
    groups:
@@ -22,7 +22,7 @@ eos_3:
    connection_options:
       netmiko:
          extras:
-            secret: arista
+            secret: from-user-input
 eos_4:
    hostname: 10.122.216.214
    groups:
@@ -30,4 +30,4 @@ eos_4:
    connection_options:
       netmiko:
          extras:
-            secret: arista
+            secret: from-user-input

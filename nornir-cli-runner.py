@@ -3,6 +3,7 @@ from nornir_utils.plugins.tasks.files import write_file
 from nornir_utils.plugins.functions import print_result
 from nornir_netmiko import netmiko_send_command
 from nornir_netmiko import netmiko_send_config
+import getpass
 import io
 import time
 import os
@@ -17,10 +18,6 @@ if not os.path.exists("output/nornir-cli-runner"):
     os.mkdir("output/nornir-cli-runner")
 if not os.path.exists("output/nornir-cli-runner/" + datetime):
     os.mkdir("output/nornir-cli-runner/" + datetime)
-
-nr = InitNornir(
-    config_file="config.yaml", dry_run=False
-)
 
 def showtasks(nr):
     output = nr.run(
@@ -59,6 +56,21 @@ def verifytasks(nr):
 
 print("\r\nWelcome to nornir based cli command runner!\r\n\r\nSelect mode, s = show/run, c = configuration or v = to verify the existance of a command:")
 mode = input()
+
+nr = InitNornir(
+    config_file="config.yaml", dry_run=False
+)
+
+print("\r\nPlease enter the credentials to perform the tasks required:\r\n")
+print("Username: ", end="")
+usern = str(input())
+password = getpass.getpass()
+secret = getpass.getpass(prompt='Secret: ')
+nr.inventory.defaults.username = usern
+nr.inventory.defaults.password = password
+
+for host in nr.inventory.hosts.keys():
+    nr.inventory.hosts[host].connection_options['netmiko'].extras['secret'] = secret
 
 if mode == "s":
     print("Enter command to run on all devices:")
