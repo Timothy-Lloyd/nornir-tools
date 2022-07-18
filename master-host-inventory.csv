@@ -1,4 +1,4 @@
-Display-Name,IP-Address,Group,Secret
+display-name,ip-address,group,secret
 eos_1,10.122.216.211,eos,from-user-input
 eos_2,10.122.216.212,eos,from-user-input
 eos_3,10.122.216.213,eos,from-user-input
