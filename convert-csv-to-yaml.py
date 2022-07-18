@@ -1,3 +1,4 @@
+#Only to use to convert changes made within master-host-inventory.csv to ./inventory/hosts.yaml file.
 import csv
 import os
 
