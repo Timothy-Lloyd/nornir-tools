@@ -2,7 +2,7 @@
 import csv
 import os
 
-print("This will overwrite existing ./inventory/hosts file with CSV contents, breakout if not desired!")
+print("This will overwrite existing ./inventory/hosts.yaml file with CSV contents, breakout if not desired!")
 input()
 
 with open("master-host-inventory.csv", "r") as f:
