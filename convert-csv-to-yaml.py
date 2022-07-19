@@ -18,4 +18,4 @@ with open("master-host-inventory.csv", "r") as f:
         .format(row[0], row[1], row[2], row[3]))
         fi.close()
     
-    print("Converstion Completed!")
+    print("Conversion Completed!")
