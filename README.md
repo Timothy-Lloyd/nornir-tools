@@ -12,7 +12,7 @@ python3-nornir-netmiko (0.1.2)
 python3-nornir (3.3.0)  
 
 ## Prerequisites:
-Add details to files in inventory folder.  
+Add details to files in ./inventory/  
 
 ## nornir-cli-runner
 nornir-cli-runner will connect to devices listed within ./inventory/hosts.yaml and perform cli commands requested when running the program. Output will be printed to the screen and also to a file in folder called "output". The tool is currently configured for 10 workers which vastly increases the speed of any tasks sent to multiple devices.  
